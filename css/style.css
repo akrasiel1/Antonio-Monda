@@ -1,0 +1,182 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Josefin Sans';
+}
+
+/* PRELOADER */
+
+.loader {
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 2000;
+}
+
+.loader .inner {
+	width: 100%;
+	height: 100%;
+	background: url(../img/preloader.gif) center center no-repeat;
+}
+
+/* NAVBAR SECTION */
+
+#mainNav {
+  min-height: 56px;
+  background-color: #f5f5f5;
+}
+
+#mainNav .navbar-toggler {
+  font-size: 80%;
+  padding: 0.75rem;
+  color: rgba(0,0,0,.5);
+  border: 2px solid rgba(0,0,0,.5);
+}
+
+#mainNav .navbar-toggler:focus {
+  outline: none;
+}
+
+#mainNav .navbar-brand {
+  color: #ffffff;
+  font-weight: 700;
+  padding: .9rem 0;
+}
+
+#mainNav .navbar-nav .nav-item:hover {
+  color: fade(white, 80%);
+  outline: none;
+  background-color: transparent;
+}
+
+#mainNav .navbar-nav .nav-item:active, #mainNav .navbar-nav .nav-item:focus {
+  outline: none;
+  background-color: transparent;
+}
+
+@media (min-width: 992px) {
+  #mainNav {
+    padding-top: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+    background-color: transparent;
+    -webkit-transition: background-color 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+  }
+  #mainNav .navbar-brand {
+    padding: .5rem 0;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  #mainNav .nav-link {
+    -webkit-transition: none;
+    transition: none;
+    padding: 2rem 1.5rem;
+    color: rgba(230, 230, 230, 0.815);
+  }
+  #mainNav .nav-link:hover {
+    color: rgba(255, 255, 255, 0.75);
+  }
+  #mainNav .nav-link:active {
+    color: white;
+  }
+  #mainNav.navbar-shrink {
+    background-color: #e7e7e7;
+  }
+  #mainNav.navbar-shrink .navbar-brand {
+    color: #161616;
+  }
+  #mainNav.navbar-shrink .nav-link {
+    color: #161616;
+    padding: 1.5rem 1.5rem 1.25rem;
+    border-bottom: 0.25rem solid transparent;
+  }
+  #mainNav.navbar-shrink .nav-link:hover {
+    color: #64a19d;
+  }
+  #mainNav.navbar-shrink .nav-link:active {
+    color: #467370;
+  }
+  #mainNav.navbar-shrink .nav-link.active {
+    color:#2393cd;
+    outline: none;
+    border-bottom: 0.25rem solid #2393cd;
+  }
+}
+  
+
+
+/* HERO SECTION */
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/naples.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+color: white;
+}
+
+.intro {
+  font-size: 50px;
+  font-weight: 300;
+}
+
+.name {
+  font-weight: bold;
+  color: #2393cd;
+}
+
+#autotype {
+  font-size: 25px;
+}
+
+.arrow {
+  font-size: 35px;
+  color: #fff;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: float 800ms linear 1s infinite alternate;
+}
+
+@keyframes float {
+  from {
+      margin-top: 0;
+  }
+  to {
+      margin-top: 10px;
+  }
+}
+
+
+/* ABOUT SECTION */
+
+.about {
+  padding: 100px 0;
+}
+
+.about-image {
+  max-width: 100%;
+}
+
+/* FOOTER SECTION */
+
+footer {
+  padding: 50px 0 25px;
+  display: block;
+}
+
+
